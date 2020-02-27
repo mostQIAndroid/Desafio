@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".presentation.details.BookDetailsActivity">
+
+    <include layout="@layout/include_toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/NYTBooksAppTextViewLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/book_details_title_label" />
+
+        <TextView
+            android:id="@+id/bookTitleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Title 01" />
+
+        <TextView
+            style="@style/NYTBooksAppTextViewLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/book_description_label" />
+
+        <TextView
+            android:id="@+id/bookDescriptionTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Description 01" />
+    </LinearLayout>
+</LinearLayout>
